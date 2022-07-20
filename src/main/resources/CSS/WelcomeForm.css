@@ -1,0 +1,9 @@
+.btn:hover, .btn:focused{
+    -fx-text-fill: red;
+    -fx-border-color: red !important;
+}
+.btn{
+    -fx-font-family: "Cantarell Extra Bold";
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}

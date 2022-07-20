@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="401.0" prefWidth="706.0" style="-fx-background-color: rgba(0,0,0,0);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SplashScreenFormController">
+   <children>
+      <ImageView fitHeight="218.0" fitWidth="217.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/filling-station.gif" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="217.0" prefHeight="401.0" prefWidth="492.0" style="-fx-background-color: #E6D971;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="214.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="78.0" fitWidth="235.0" layoutX="23.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="80.70687103271484" AnchorPane.leftAnchor="23.0">
+               <image>
+                  <Image url="@../image/logo.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutY="17.0" prefHeight="57.0" prefWidth="492.0" text="National Fuel Pass App" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutY="76.0" prefHeight="22.0" prefWidth="492.0" text="v0.1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblStatus" alignment="CENTER" layoutY="135.0" prefHeight="21.0" prefWidth="492.0" text="Welcome to national fuel pass App...!" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="72.0" fitWidth="76.0" layoutX="328.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="72.0" AnchorPane.rightAnchor="100.0">
+               <image>
+                  <Image url="@../image/ioc.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="72.0" fitWidth="72.0" layoutX="399.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="74.23636627197266" AnchorPane.rightAnchor="20.0">
+               <image>
+                  <Image url="@../image/ceypetco.png" />
+               </image>
+            </ImageView>
+            <Rectangle fx:id="pgbContainer" arcHeight="5.0" arcWidth="5.0" fill="#6b7e90" height="7.0" layoutY="362.0" stroke="BLACK" strokeType="INSIDE" width="492.0" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <Rectangle fx:id="pgbLoad" arcHeight="5.0" arcWidth="5.0" fill="#ffd321" height="7.0" layoutY="362.0" stroke="BLACK" strokeType="INSIDE" width="45.0" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

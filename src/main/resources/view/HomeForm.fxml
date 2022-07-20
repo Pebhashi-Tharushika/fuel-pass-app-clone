@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+
+<AnchorPane prefHeight="652.0" prefWidth="743.0" stylesheets="@../CSS/HomeForm.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeFormController">
+   <children>
+      <ImageView fitHeight="65.0" fitWidth="277.0" layoutX="23.0" layoutY="21.0" onMouseClicked="#imgLogoOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/logo.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <AnchorPane id="imgContainer" fx:id="pneLogin" focusTraversable="true" layoutX="651.0" layoutY="26.0" onKeyReleased="#pneLoginOnKeyReleased" onMouseClicked="#pneLoginOnMouseClicked" AnchorPane.rightAnchor="37.0">
+         <children>
+            <ImageView fitHeight="55.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/admin.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pneContainer" layoutY="107.0" prefHeight="499.0" prefWidth="743.0" style="-fx-background-color: #E1E4EC;" AnchorPane.bottomAnchor="46.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="107.0" />
+      <FlowPane alignment="CENTER" layoutY="608.0" prefHeight="3.0" prefWidth="743.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fitHeight="43.0" fitWidth="183.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/footerLogo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </FlowPane>
+   </children>
+</AnchorPane>
