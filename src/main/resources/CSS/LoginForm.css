@@ -1,0 +1,14 @@
+#btnLogin{
+    -fx-background-color: rgb(0,178,255);
+    -fx-cursor: hand;
+}
+#btnLogin:hover,#btnRegister:focused{
+    -fx-background-color: rgb(0,178,255,0.8);
+}
+#btnRegisterHere{
+    -fx-text-fill: rgb(0,178,255);
+    -fx-cursor: hand;
+}
+#btnRegisterHere:hover,#btnLoginHere:focused{
+    -fx-text-fill: rgb(0,178,255,0.8);
+}

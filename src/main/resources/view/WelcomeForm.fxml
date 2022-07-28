@@ -4,11 +4,14 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="pneWelcome" prefHeight="499.0" prefWidth="743.0" style="-fx-background-color: #E1E4EC;" stylesheets="@../CSS/WelcomeForm.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WelcomeFormController">
+<AnchorPane fx:id="pneWelcome" prefHeight="822.0" prefWidth="743.0" style="-fx-background-color: #E1E4EC;" stylesheets="@../CSS/WelcomeForm.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WelcomeFormController">
    <children>
       <Label alignment="CENTER" layoutY="10.0" prefHeight="55.0" prefWidth="743.0" text="NATIONAL FUEL PASS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <font>
@@ -36,5 +39,30 @@
             </Button>
          </children>
       </FlowPane>
+      <Label layoutX="41.0" layoutY="232.0" text="Things to note prior to Registration">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <VBox layoutX="41.0" layoutY="270.0" spacing="8.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="50.0">
+         <children>
+            <Label text="Enter the Chassis number precisely as per the Certificate of Registration of Motor Vehicles (Case Sensitive)" />
+            <Label text="Vehicle registrations with “Sri –“ to only enter the vehicle number in columns Ex: 3 Sri -1234 =&gt; 3 1234" />
+            <Label text="Vehicle category to be selected as per Certificate of Registration of Motor Vehicle. Applicable categories" />
+         </children>
+      </VBox>
+      <ImageView fitHeight="270.0" fitWidth="889.0" layoutX="41.0" layoutY="355.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="172.28369140625">
+         <image>
+            <Image url="@../image/table.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="41.0" layoutY="638.0" spacing="8.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="50.0">
+         <children>
+            <Label text="Only one NIC/PP/BRN is allowed per vehicle and per mobile no" />
+            <Label text="At registration NIC/Name/Address does not require to match Certificate of registration ownership details" />
+            <Label text="Company and Government vehicles/bikes can be registered under BRN or NIC per vehicle only, Multiple vehicle registrations will be allowed shortly" />
+            <Label text="Fuel Quota allocation will be based on vehicle category. Allocation will be announced by Ministry of Power &amp; Energy" />
+            <Label text="Call 1919 for any registration related assistance" />
+         </children>
+      </VBox>
    </children>
 </AnchorPane>

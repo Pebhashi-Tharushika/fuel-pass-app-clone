@@ -5,12 +5,15 @@ import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 import javafx.util.Duration;
+import util.Navigation;
 
 import java.io.IOException;
 import java.net.URL;
@@ -48,9 +51,14 @@ public class SplashScreenFormController {
             public void handle(ActionEvent actionEvent) {
                 try {
                     pgbLoad.setWidth(pgbContainer.getWidth());
+
                     URL resource = this.getClass().getResource("/view/HomeForm.fxml");
-                    Parent container = FXMLLoader.load(resource);
-                    Scene scene = new Scene(container);
+                    Parent homeFormContainer = FXMLLoader.load(resource);
+
+                    AnchorPane pneContainer = (AnchorPane) homeFormContainer.lookup("#pneContainer"); // lookup(css selector)
+                    Navigation.init(pneContainer);
+
+                    Scene scene = new Scene(homeFormContainer);
                     Stage stage = new Stage();
                     stage.setScene(scene);
                     stage.setTitle("National Fuel Pass App");

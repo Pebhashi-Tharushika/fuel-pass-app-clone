@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.FlowPane?>
 
-<AnchorPane prefHeight="652.0" prefWidth="743.0" stylesheets="@../CSS/HomeForm.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeFormController">
+<AnchorPane prefHeight="822.0" prefWidth="743.0" stylesheets="@../CSS/HomeForm.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeFormController">
    <children>
       <ImageView fitHeight="65.0" fitWidth="277.0" layoutX="23.0" layoutY="21.0" onMouseClicked="#imgLogoOnMouseClicked" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -28,7 +28,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="pneContainer" layoutY="107.0" prefHeight="499.0" prefWidth="743.0" style="-fx-background-color: #E1E4EC;" AnchorPane.bottomAnchor="46.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="107.0" />
+      <AnchorPane fx:id="pneContainer" layoutY="107.0" minHeight="-Infinity" prefHeight="822.0" prefWidth="743.0" style="-fx-background-color: #E1E4EC;" AnchorPane.bottomAnchor="46.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="107.0" />
       <FlowPane alignment="CENTER" layoutY="608.0" prefHeight="3.0" prefWidth="743.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
             <ImageView fitHeight="43.0" fitWidth="183.0" pickOnBounds="true" preserveRatio="true">
