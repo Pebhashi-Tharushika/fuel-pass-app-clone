@@ -2,7 +2,7 @@
     -fx-background-color: rgb(0,178,255);
     -fx-cursor: hand;
 }
-#btnLogin:hover,#btnRegister:focused{
+#btnLogin:hover,#btnLogin:focused{
     -fx-background-color: rgb(0,178,255,0.8);
 }
 #btnRegisterHere{

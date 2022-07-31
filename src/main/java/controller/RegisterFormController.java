@@ -13,6 +13,8 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
@@ -20,6 +22,7 @@ import util.Navigation;
 import util.Routes;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URL;
 
 public class RegisterFormController {
@@ -39,6 +42,7 @@ public class RegisterFormController {
     }
 
     public void initialize(){
+
         Platform.runLater(txtNIC::requestFocus);
 
         txtNIC.textProperty().addListener(new ChangeListener<String>() {
@@ -95,10 +99,23 @@ public class RegisterFormController {
             return;
         }
 
-        boolean result =InMemoryDB.registerUser(new User(nic,firstName,lastName,address));
+        boolean result =InMemoryDB.registerUser(new User(nic,firstName,lastName,address, 16));
 
         if(result){
-            new Alert(Alert.AlertType.INFORMATION,"Successfully registered").showAndWait();
+            Alert alert = new Alert(Alert.AlertType.INFORMATION, "Successfully registered...You will be redirected to the login screen");
+            InputStream resourceAsStream = this.getClass().getResourceAsStream("/image/tick.png");
+            Image img = new Image(resourceAsStream);
+            ImageView imgView = new ImageView(img);
+            imgView.setFitWidth(48);
+            imgView.setFitHeight(48);
+            alert.setGraphic(imgView);
+            alert.setHeaderText("Registered");
+            alert.setTitle("Congratulations");
+            alert.getDialogPane().setMinWidth(500);
+            alert.getDialogPane().setMinHeight(170);
+
+            alert.show();
+
             lblLoginHereOnMouseClicked(null);
         }else{
             new Alert(Alert.AlertType.ERROR,"NIC is already registered. Please double check your NIC").showAndWait();

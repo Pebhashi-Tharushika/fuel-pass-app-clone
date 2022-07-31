@@ -1,0 +1,7 @@
+#btnLogOut{
+    -fx-background-color: rgb(0,178,255);
+    -fx-cursor: hand;
+}
+#btnLogOut:hover,#btnLogOut:focused{
+    -fx-background-color: rgb(0,178,255,0.8);
+}

@@ -33,10 +33,14 @@
          </font>
       </Label>
       <TextField fx:id="txtNIC" layoutX="201.0" layoutY="200.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
-      <Button id="btnLogin" fx:id="btnLogin" layoutX="274.0" layoutY="271.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="31.0" prefWidth="77.0" stylesheets="@../CSS/LoginForm.css" text="Login" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="250.0">
-         <font>
-            <Font name="Cantarell Extra Bold" size="16.0" />
-         </font>
-      </Button>
+      <FlowPane alignment="CENTER" layoutX="274.0" layoutY="271.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button id="btnLogin" fx:id="btnLogin" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="31.0" prefWidth="77.0" stylesheets="@../CSS/LoginForm.css" text="Login">
+               <font>
+                  <Font name="Cantarell Extra Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </FlowPane>
    </children>
 </AnchorPane>

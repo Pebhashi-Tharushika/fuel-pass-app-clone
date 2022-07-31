@@ -7,15 +7,17 @@ public class User implements Serializable{
     private String firstName;
     private String lastName;
     private String address;
+    private int quota;
 
     public User() {
     }
 
-    public User(String nic, String firstName, String lastName, String address) {
+    public User(String nic, String firstName, String lastName, String address, int quota) {
         this.nic = nic;
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
+        this.quota = quota;
     }
 
     public String getNic() {
@@ -48,5 +50,13 @@ public class User implements Serializable{
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public int getQuota() {
+        return quota;
+    }
+
+    public void setQuota(int quota) {
+        this.quota = quota;
     }
 }

@@ -30,11 +30,9 @@ public class HomeFormController {
                 throw new RuntimeException(e);
             }
         });
-
     }
 
     public void imgLogoOnMouseClicked(MouseEvent mouseEvent) throws IOException {
-        pneContainer.getChildren().clear();
         initialize();
     }
 

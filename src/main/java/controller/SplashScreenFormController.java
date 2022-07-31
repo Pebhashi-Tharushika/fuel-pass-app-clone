@@ -32,30 +32,28 @@ public class SplashScreenFormController {
                 pgbLoad.setWidth(pgbLoad.getWidth()+75);
             }
         });
-         KeyFrame keyFrame2 = new KeyFrame(Duration.millis(1000), new EventHandler<ActionEvent>() {
+         KeyFrame keyFrame2 = new KeyFrame(Duration.millis(750), new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
                 lblStatus.setText("Loading data...!");
-                pgbLoad.setWidth(pgbLoad.getWidth()+100);
+                pgbLoad.setWidth(pgbLoad.getWidth()+200);
             }
         });
-        KeyFrame keyFrame3 = new KeyFrame(Duration.millis(1500), new EventHandler<ActionEvent>() {
+        KeyFrame keyFrame3 = new KeyFrame(Duration.millis(1250), new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
                 lblStatus.setText("Setting up the UI...!");
-                pgbLoad.setWidth(pgbLoad.getWidth()+250);
+                pgbLoad.setWidth(pgbContainer.getWidth());
             }
         });
         KeyFrame keyFrame4 = new KeyFrame(Duration.millis(2000), new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
                 try {
-                    pgbLoad.setWidth(pgbContainer.getWidth());
-
                     URL resource = this.getClass().getResource("/view/HomeForm.fxml");
                     Parent homeFormContainer = FXMLLoader.load(resource);
 
-                    AnchorPane pneContainer = (AnchorPane) homeFormContainer.lookup("#pneContainer"); // lookup(css selector)
+                    AnchorPane pneContainer = (AnchorPane) homeFormContainer.lookup("#pneContainer"); // lookup(css selector - need # for id)
                     Navigation.init(pneContainer);
 
                     Scene scene = new Scene(homeFormContainer);

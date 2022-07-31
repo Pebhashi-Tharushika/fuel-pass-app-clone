@@ -17,7 +17,6 @@ public class WelcomeFormController {
     public Button btnLogin;
     public AnchorPane pneWelcome;
 
-    public void initialize(){}
 
     public void btnRegisterOnAction(ActionEvent actionEvent) throws IOException {
         Navigation.navigate(Routes.REGISTRATION);
