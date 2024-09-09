@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="pneDashboard" prefHeight="459.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserDashboardController">
+<AnchorPane fx:id="pneDashboard" prefHeight="481.0" prefWidth="655.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserDashboardController">
    <children>
       <AnchorPane layoutY="34.0" prefHeight="333.0" prefWidth="500.0">
          <children>
@@ -28,12 +28,12 @@
                   </Button>
                </children>
             </FlowPane>
-            <ImageView fx:id="imgQR" fitHeight="200.0" fitWidth="200.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgQR" fitHeight="200.0" fitWidth="200.0" layoutX="27.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../image/Qr-Code.png" />
                </image>
             </ImageView>
-            <HBox layoutX="244.0" layoutY="141.0" spacing="20.0">
+            <HBox layoutX="280.0" layoutY="141.0" prefHeight="166.0" prefWidth="348.0" spacing="20.0">
                <children>
                   <VBox spacing="30.0">
                      <children>
@@ -85,8 +85,8 @@
                   </VBox>
                </children>
             </HBox>
-            <Button fx:id="btnDownload" layoutX="16.0" layoutY="332.0" mnemonicParsing="false" onAction="#btnDownloadOnAction" prefHeight="26.0" prefWidth="174.0" text="Download" />
-            <Button fx:id="btnPrint" layoutX="15.0" layoutY="372.0" mnemonicParsing="false" onAction="#btnPrintOnAction" prefHeight="26.0" prefWidth="174.0" text="Print" />
+            <Button fx:id="btnDownload" layoutX="27.0" layoutY="349.0" mnemonicParsing="false" onAction="#btnDownloadOnAction" prefHeight="26.0" prefWidth="200.0" text="Download" />
+            <Button fx:id="btnPrint" layoutX="26.0" layoutY="389.0" mnemonicParsing="false" onAction="#btnPrintOnAction" prefHeight="26.0" prefWidth="200.0" text="Print" />
          </children>
       </AnchorPane>
    </children>

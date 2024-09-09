@@ -1,15 +1,12 @@
 package controller;
 
 import javafx.event.ActionEvent;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import util.Navigation;
 import util.Routes;
 
 import java.io.IOException;
-import java.net.URL;
 
 public class WelcomeFormController {
 

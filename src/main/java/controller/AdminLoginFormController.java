@@ -2,8 +2,6 @@ package controller;
 
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.image.Image;
@@ -14,15 +12,13 @@ import javafx.scene.media.MediaPlayer;
 import util.Navigation;
 import util.Routes;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.URISyntaxException;
 import java.net.URL;
 
 public class AdminLoginFormController {
     public PasswordField txtPassword;
-    private static final String ADMIN_PASSWORD = "dep9@ADMIN";
+    private static final String ADMIN_PASSWORD = "fuel@ADMIN";
     public AnchorPane pneAdminLoginForm;
     private static int attempts = 3;
 

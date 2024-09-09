@@ -6,10 +6,10 @@ public class InMemoryDB {
     private static ArrayList<User> userDatabase = new ArrayList();
 
     static{
-        registerUser(new User("123456789V","Kasun","Nuwan","Galle Road,Panadura",16));
-        registerUser(new User("111111111V","Nimal","Perera","Kandy Road,Colombo",16));
-        registerUser(new User("222222222V","Pasan","Kumara","Matara Road,Galle",16));
-        registerUser(new User("333333333V","Lalith","Saman","Jaffna Road,Wawniya",16));
+        registerUser(new User("893456789V","William","James","Richmond Drive, Liverpool",16));
+        registerUser(new User("987654321V","Oliver","Alexander","10 Oakwood Lane, Leeds",16));
+        registerUser(new User("654321789V","David","Christopher","Primrose Avenue, Oxford",16));
+        registerUser(new User("786954321V","Henry","Samuel","Queen's Court, London",16));
     }
 
     public static boolean registerUser(User newUser){

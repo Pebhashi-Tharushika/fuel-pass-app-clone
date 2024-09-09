@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
    <children>
       <Label alignment="CENTER" layoutX="-1.0" layoutY="14.0" prefHeight="43.0" prefWidth="600.0" text="LOGIN" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <font>
@@ -15,14 +15,14 @@
          </font></Label>
       <FlowPane alignment="CENTER" layoutX="72.0" layoutY="88.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
-            <Label prefHeight="29.0" prefWidth="223.0" text="Don't have an account?">
+            <Label prefHeight="29.0" prefWidth="243.0" text="Don't have an account?">
                <font>
-                  <Font name="System Bold" size="20.0" />
+                  <Font size="20.0" />
                </font>
             </Label>
             <Label id="btnRegisterHere" onMouseClicked="#lblRegisterHereOnMouseClicked" stylesheets="@../CSS/LoginForm.css" text="Rgister Here">
                <font>
-                  <Font name="Cantarell Extra Bold" size="20.0" />
+                  <Font name="System Bold" size="20.0" />
                </font>
             </Label>
          </children>

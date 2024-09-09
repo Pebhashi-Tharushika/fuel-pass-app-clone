@@ -1,12 +1,6 @@
 package controller;
 
 import javafx.application.Platform;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
@@ -15,7 +9,6 @@ import util.Navigation;
 import util.Routes;
 
 import java.io.IOException;
-import java.net.URL;
 
 public class HomeFormController {
     public AnchorPane pneContainer;

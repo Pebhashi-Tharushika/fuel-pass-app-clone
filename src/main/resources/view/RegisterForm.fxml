@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-<AnchorPane fx:id="pneRegisterForm" prefHeight="496.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegisterFormController">
+<AnchorPane fx:id="pneRegisterForm" prefHeight="496.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegisterFormController">
    <children>
       <Label alignment="CENTER" layoutY="34.0" prefHeight="43.0" prefWidth="600.0" text="REGISTRATION" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <font>
@@ -22,22 +22,22 @@
          <children>
             <Label text="Already have an account? ">
                <font>
-                  <Font name="System Bold" size="20.0" />
+                  <Font size="20.0" />
                </font>
             </Label>
             <Label id="btnLoginHere" onMouseClicked="#lblLoginHereOnMouseClicked" stylesheets="@../CSS/registerForm.css" text="Login Here">
                <font>
-                  <Font name="Cantarell Extra Bold" size="20.0" />
+                  <Font name="System Bold" size="20.0" />
                </font>
             </Label>
          </children>
       </FlowPane>
-      <Label layoutX="77.0" layoutY="156.0" text="Personal Details" textFill="LIME" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="156.0">
+      <Label layoutX="77.0" layoutY="156.0" text="Personal Details" textFill="#15bf15" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="156.0">
          <font>
-            <Font name="Cantarell Extra Bold" size="17.0" />
+            <Font name="System Bold" size="17.0" />
          </font>
       </Label>
-      <Pane layoutX="23.0" layoutY="183.0" prefHeight="4.0" prefWidth="622.0" style="-fx-background-color: rgb(0,255,0);" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="183.0" />
+      <Pane layoutX="23.0" layoutY="183.0" prefHeight="4.0" prefWidth="622.0" style="-fx-background-color: rgb(21,191,21);" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="183.0" />
       <TextFlow layoutX="55.0" layoutY="218.0" AnchorPane.leftAnchor="22.0">
          <children>
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NIC Number">
@@ -88,7 +88,19 @@
             </AnchorPane>
          </children>
       </HBox>
-      <TextFlow layoutX="22.0" layoutY="346.0" AnchorPane.leftAnchor="22.0" />
+      <TextFlow layoutX="22.0" layoutY="367.0" AnchorPane.leftAnchor="22.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+               <font>
+                  <Font name="Cantarell Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="#fa0000" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+               <font>
+                  <Font name="Cantarell Bold" size="13.0" />
+               </font>
+            </Text>
+         </children></TextFlow>
       <TextField fx:id="txtAddress" disable="true" layoutX="22.0" layoutY="385.0" promptText="EX: 399/8, Station Road, Colombo" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="22.0" />
       <Label fx:id="lblNICStatus" layoutX="22.0" layoutY="262.0" prefHeight="18.0" prefWidth="264.0" text="Please enter valid NIC number to proceed" />
       <Button id="btnRegister" fx:id="btnRegister" disable="true" layoutX="22.0" layoutY="441.0" mnemonicParsing="false" onAction="#btnRegisterOnAction" prefHeight="31.0" prefWidth="103.0" stylesheets="@../CSS/registerForm.css" text="Register" AnchorPane.leftAnchor="22.0">
@@ -99,15 +111,5 @@
             <Cursor fx:constant="DEFAULT" />
          </cursor>
       </Button>
-      <Text layoutX="22.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
-         <font>
-            <Font name="Cantarell Bold" size="13.0" />
-         </font>
-      </Text>
-      <Text fill="#fa0000" layoutX="70.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
-         <font>
-            <Font name="Cantarell Bold" size="13.0" />
-         </font>
-      </Text>
    </children>
 </AnchorPane>
