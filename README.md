@@ -6,8 +6,13 @@ JetBrains Intellij Idea, JDK 11, Gluon Scene Builder, In-Memory Database
 
 ### Application Preview
 
-- SplashScreen and HomePage
-![](asset/splashscreen.gif)
+- User Dashboard: Registration & QR Code Generation
+![](asset/user-dashboard.gif)
+
+---
+
+- Admin Portal: User Management and Fuel Quota Control
+![](asset/admin-portal.gif)
 
 ### How to Run the Application
 
@@ -32,5 +37,5 @@ JetBrains Intellij Idea, JDK 11, Gluon Scene Builder, In-Memory Database
 0.1.0
 
 ### License
-CopyRight &copy; 2022 DEP9. All Rights Reserved.
+CopyRight &copy; 2022 MBPT. All Rights Reserved.
 This project is licensed under the [MIT License](LICENSE.txt).
