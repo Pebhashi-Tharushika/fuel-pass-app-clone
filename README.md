@@ -25,7 +25,7 @@ JetBrains Intellij Idea, JDK 11, Gluon Scene Builder, In-Memory Database
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/Pebhashi-Tharushika/fuel-pass-app-clone.git
    
 2. Navigate to the project directory or open the project in IntelliJ IDEA. <br><br>
 
